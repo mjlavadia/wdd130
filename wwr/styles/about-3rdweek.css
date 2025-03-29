@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lilita+One&display=swap');
+
+
+:root {
+    --primary-color: #E6A724;
+    --secondary-color: #171F1F;
+    --text-color: #333;
+    --background-color: #f1f1f1;
+    --accent-color: #1EA192;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+header img {
+    height: 60px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+article {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    width: 150px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+
+section {
+    text-align: center;
+    padding: 2rem;
+}
+
+section h2 {
+    font-family: 'Lilita One', cursive;
+    color: var(--secondary-color);
+}
+
+
+section img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer img {
+    width: 30px;
+    margin: 5px;
+}
