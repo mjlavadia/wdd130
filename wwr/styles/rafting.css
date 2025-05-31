@@ -27,8 +27,14 @@ header, main, footer {
 }
 
 header {
-   background-color: var(--primary-color);
-   color: var(--accent2-color)
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    max-width: 1000px;
 }
 
 h1, h2 {
@@ -39,6 +45,44 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+
+.navigation {
+	display: flex;
+    justify-content: flex-end;
+	list-style: none;
+	padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+}
+
+.navigation li {
+    background-color: var(--accent1-color);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+	flex: 1 1 auto;
+}
+
+.navigation a {
+	display: block;
+    color: var(--accent2-color);;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+	color: white;
+	font-weight: 700;
+	text-decoration: underline;
 }
 
 .socialmedia a {
@@ -61,18 +105,120 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.95;
     background-color: var(--accent1-color);
-    color: #fff
+    color: white;
+}
+
+.history, .adventure {
+    max-width: 1000px;         
+    margin: 1rem auto;        
+    padding: 2rem;        
+    background-color: #f4f4f4; 
+    border: 2px solid var(--accent1-color);
+}
+
+.history h2 {
+    text-align: center;
+    font-size: 2.5rem; /* make it big */
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.history-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap; /* Keep it in one row on wide screens */
+}
+
+.history-left {
+    flex: 1;
+    text-align: left ;
+}
+
+.history-right {
+    flex: 1;
+    text-align: right ;
+}
+
+.history-img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 article {
-    position: absolute;
-    top: 70%;
-    background-color: var(--primary-color);
+   position: absolute;
+   top: 63%;
+   left: 1%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   padding: 16px;
+   text-align: left;
+   background-color: var(--primary-color);
+   width: 95%;
+
 }
 
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.adventure h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem; 
+    justify-items: center; 
+}
+
+.adventure-gallery img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    max-width: 840px;
+    margin: 2rem auto 1rem auto;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;       /* Vertically center text and logos */
+    justify-content: space-between;  /* Text on left, logos on right */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;            
+    text-align: center;
+    flex-grow: 1;     
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;               
+}
+
+.socialmedia a img {
+    width: 30px;  
+    height: auto;
+    display: block;
 }
