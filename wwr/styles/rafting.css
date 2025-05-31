@@ -183,6 +183,11 @@ article {
     justify-items: center; 
 }
 
+.adventure-gallery figure {
+    margin: 0; /* reset default */
+    text-align: center;
+}
+
 .adventure-gallery img {
     width: 180px;
     height: auto;
