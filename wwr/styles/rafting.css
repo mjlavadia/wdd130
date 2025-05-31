@@ -162,7 +162,14 @@ article {
    text-align: left;
    background-color: var(--primary-color);
    width: 95%;
+   border: 1px solid var(--accent2-color);
+}
 
+article h2 {
+    font-size: 1.2rem;
+    color: var(--accent1-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .hero article img {
