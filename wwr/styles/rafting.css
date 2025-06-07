@@ -270,3 +270,11 @@ footer p {
     height: auto;
     border-radius: 10px;
 }
+
+.box {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 2px solid var(--accent1-color);
+    background-color: white
+}
